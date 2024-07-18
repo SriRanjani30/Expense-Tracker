@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    margin: 0 0 20px;
+}
+
+.balance {
+    margin: 20px 0;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.income, .expense {
+    flex: 1;
+    padding: 10px;
+    margin: 0 10px;
+    background: #f4f4f4;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-form {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.transaction-history {
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li.income {
+    border-right: 5px solid #2ecc71;
+}
+
+li.expense {
+    border-right: 5px solid #e74c3c;
+}
