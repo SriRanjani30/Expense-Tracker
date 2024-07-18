@@ -1,24 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    max-width: 500px;
-    margin: 30px auto;
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
     background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-    margin: 0 0 20px;
+h1 {
+    font-size: 24px;
+    color: #5f27cd;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .balance {
     margin: 20px 0;
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.balance p {
+    font-size: 24px;
+    color: #333;
 }
 
 .income-expense {
@@ -29,57 +52,75 @@ h1, h2, h3 {
 
 .income, .expense {
     flex: 1;
-    padding: 10px;
+    padding: 15px;
     margin: 0 10px;
-    background: #f4f4f4;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #f8f8ff;
+    border-radius: 8px;
+}
+
+.income h3, .expense h3 {
+    margin: 0 0 10px;
 }
 
 .transaction-form {
     margin: 20px 0;
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
+    font-size: 14px;
+    color: #5f27cd;
 }
 
 input[type="text"], input[type="number"] {
-    width: calc(100% - 22px);
+    width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 button {
-    padding: 10px 20px;
-    background: #333;
+    width: 100%;
+    padding: 10px;
+    background: #5f27cd;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background: #555;
+    background: #341f97;
 }
 
 .transaction-history {
     margin: 20px 0;
+    background: #f8f8ff;
+    padding: 15px;
+    border-radius: 8px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 li {
-    background: #f4f4f4;
+    background: #fff;
     padding: 10px;
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 li.income {
@@ -88,4 +129,16 @@ li.income {
 
 li.expense {
     border-right: 5px solid #e74c3c;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
 }
